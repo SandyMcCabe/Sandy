@@ -3,32 +3,22 @@
     margin: 0;
     padding: 0;
     background-color: black;  
-
     color: #c1e1ec;
-  }
-
-  body {
-    color: lightgray;
     font-family: Helvetica, Arial, sans-serif;
   }
 
   header {
     padding: 20px 35px;
-    color: lightgray;
-    
-    /*background-image: url('../images/wave-banner.jpg');  */
-    background-color: ;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
-  
+      
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     
-
     position: sticky;
     top: 0;
     position: -webkit-sticky;
@@ -40,19 +30,17 @@
     font-weight: bold;
     margin: 0;
     font-size: 50px;
-    color: grey;
-    /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)*/
   }
   
   header a {
+    /* remove underlines to show text is a link */
     text-decoration: none; 
-    
   }   
   
+  /*
   header nav {
     margin: 7px 0;
-   
-  }
+  }  */
   
   header nav ul {
     display: flex;
@@ -66,38 +54,33 @@
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   header nav ul li a:hover {
-    /* background: #fce138;
-    color: #024e76;  */
+    color: #6dacc2;
     border-radius: 15px;
-    text-shadow: none;
+    /*text-shadow: none;    */
   }
   
   /* HERO STYLES START */
 .hero {
     background-image: url('../images/gears.jpg');
- 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  
     background-size: cover;
-    
     padding: 75px;
-
     }
+
 .hero-pic {
     float: left;
     margin: 35px 0 0 35px;
-    height: 300px;
+    height: 350px;
 }
 
 .hero-pic img  {
     height: 100%;
-}
+}   
 
 .hero-quote {
   background-color: transparent;
@@ -105,7 +88,42 @@
   flex-direction: column;
   justify-content: flex-end;
   position: right;
-  /*height: 50px;  */
 }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+
+.section-header {
+  display: flex;
+  /*flex-direction: column;  */
+  justify-content: right;
+  align-content: flex-end;
+  max-width:  15%;
+}
+
+.section-header h2 {
+  /*display: flex;  */
+  color: #6dacc2;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  border-right: medium, #6dacc2;
+}   
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  /*  justify-content: flex-end;
+  position: right;
+  float: center;  */
+  width: 85%;
+  /* margin: 15px 0 0 35px;*/
+  
+}
+
 
 
