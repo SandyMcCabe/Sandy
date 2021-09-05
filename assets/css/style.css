@@ -19,11 +19,11 @@
     flex-wrap: wrap;
     align-items: center;
     
-    position: sticky;
+    /* position: sticky;
     top: 0;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 0; */
   }
   
   header h1 {
@@ -47,7 +47,7 @@
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size:xx-large;
   }
   
   header nav ul li a:hover {
@@ -67,13 +67,15 @@
 
 .hero-pic {
     float: left;
-    margin: 35px 0 0 35px;
+    margin: 35px 0;
     height: 350px;  
+    background-color: transparent;
+    
 }
 
 .hero-pic img  {
     height: 100%;
-   
+    border-radius: 15px;
 }   
 
 .hero-quote {
@@ -99,7 +101,8 @@
   margin: 0;
   color: #6dacc2;
   font-weight: lighter;
-  font-size: 1.55vw;
+  /* font-size: 1.55vw; */
+  font-size: x-large;
   text-align: right;
   padding-right: 20px;
 }   
@@ -113,57 +116,84 @@
 }
 
 .work {
-  display: inline-flex;  
-  justify-content: right;
-  flex-wrap: wrap;
+  display: inline-flex; 
   padding: 25px;   /*padding avove the section */
-  /* margin-bottom: 25px; */
+  min-width: 100%;
 }
 
 .samples {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 85%;
-  margin-bottom: 50px;
-}
-
-.samples img:hover {  
-  border-style: solid;
-  border-width: thick;
-  border-color: #6dacc2;
 }
 
 .long-sample {
-  display: inline-flex;
-  flex-direction: column; 
-  flex-wrap: wrap;
+  background-image: url('../images/wave-banner.jpg');
+  height: 100%;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+  padding-bottom: 50px;
 }
 
-.long-sample img {
-  width: 100%;
-  height: 85%;
-  border-radius: 15px;
-  object-fit: cover;
+  .long-sample:hover {
+  border-style: solid;
+  border-width: thick;
+  border-color: #6dacc2;
+} 
+
+
+.label {
+  display: flex;
+  /* change the orientation of the flex box so I can put it at the bottom */
+  flex-direction: column;
+  margin: 200px 0 0 25px;
+} 
+
+
+
+.samples-row2 {
+  display: inline-flex;
+  justify-content:space-around;
+  padding-top: 25px;
+  min-width: 100%;
 }
 
 .short-sample {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  background-size: cover;
+  border-radius: 15px;
+  padding-bottom: 50px; 
+  width: 400px;
 }
 
-.short-sample img {
-  height: 100%;
-  width: 32%;
-  object-fit: cover;
-  border-radius: 15px;
+.short-sample:hover {
+  border-style: solid;
+  border-width: thick;
+  border-color: #6dacc2;
+} 
+
+.sample1 {
+ 
+  background-image: url('../images/wave-banner.jpg');
+
 }
 
-.short-sample a {
-  height: auto;
-  width: 32%;
-  object-fit: cover;
-  border-radius: 15px;
+.sample2 {
+   background-image: url('../images/gears.jpg');
+
 }
+
+.sample3 {
+  background-image: url('../images/runbuddy.JPG');
+}
+
+
+
+
+
+
 .contactMe {
   display: flex;  
   flex-wrap: wrap;
@@ -176,6 +206,9 @@
   flex-wrap: wrap;
   width: 85%;
   /* padding-right: 20px;   */
+  font-size: x-large;
+  /* text-align: right; */
+  padding-left: 20px;
   }
 
   .contacts a:hover {
