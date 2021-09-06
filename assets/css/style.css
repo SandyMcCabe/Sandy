@@ -7,75 +7,75 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
-  header {
-    padding: 20px 35px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+/* HEADER STYLES START */
+header {
+  padding: 20px 35px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
       
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
     
-    /* position: sticky;
-    top: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0; */
-  }
+  /* Leaving this here incase I decide to add again */
+  /* position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
+}
   
-  header h1 {
-    font-weight: bold;
-    font-size: 50px;
-  }
+header h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
   
-  header a {
-    /* remove underlines that show text is a link */
-    text-decoration: none; 
-  }   
+header a {
+  /* remove underlines that show text is a link */
+  text-decoration: none; 
+}   
   
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
   
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size:xx-large;
-  }
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size:xx-large;
+}
   
-  header nav ul li a:hover {
-    color: #6dacc2;
-    /* border-radius: 15px; */
-  }
+header nav ul li a:hover {
+  color: #6dacc2;
+}
   
-  /* HERO STYLES START */
+/* HERO STYLES START */
 .hero {
-    background-image: url('../images/gears.jpg');
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-size: cover;
-    padding: 75px;
-    }
+  background-image: url('../images/gears.jpg');
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-size: cover;
+  padding: 75px;
+}
 
 .hero-pic {
-    float: left;
-    margin: 35px 0;
-    height: 350px;  
-    background-color: transparent;
-    
+  float: left;
+  margin: 35px 0;
+  height: 350px;  
+  background-color: transparent;
 }
 
 .hero-pic img  {
-    height: 100%;
-    border-radius: 15px;
+  height: 100%;
+  border-radius: 15px;
 }   
 
 .hero-quote {
@@ -101,7 +101,6 @@
   margin: 0;
   color: #6dacc2;
   font-weight: lighter;
-  /* font-size: 1.55vw; */
   font-size: x-large;
   text-align: right;
   padding-right: 20px;
@@ -137,12 +136,11 @@
   padding-bottom: 50px;
 }
 
-  .long-sample:hover {
+.long-sample:hover {
   border-style: solid;
   border-width: thick;
   border-color: #6dacc2;
 } 
-
 
 .label {
   display: flex;
@@ -150,8 +148,6 @@
   flex-direction: column;
   margin: 200px 0 0 25px;
 } 
-
-
 
 .samples-row2 {
   display: inline-flex;
@@ -175,24 +171,14 @@
 } 
 
 .sample1 {
- 
   background-image: url('../images/wave-banner.jpg');
-
 }
-
 .sample2 {
-   background-image: url('../images/gears.jpg');
-
+  background-image: url('../images/gears.jpg');
 }
-
 .sample3 {
   background-image: url('../images/runbuddy.JPG');
 }
-
-
-
-
-
 
 .contactMe {
   display: flex;  
@@ -205,17 +191,52 @@
   flex-direction: column;  
   flex-wrap: wrap;
   width: 85%;
-  /* padding-right: 20px;   */
   font-size: x-large;
-  /* text-align: right; */
   padding-left: 20px;
+}
+
+.contacts a:hover {
+  color: #6dacc2;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding:0;
+    justify-content: center;
+    position: relative;
   }
 
-  .contacts a:hover {
-    color: #6dacc2;
-    /* border-radius: 15px; */
+  header h1 {
+    width: 100%;
+    text-align: center;
   }
 
+  header nav ul {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
 
- 
- 
+  header nav ul li a {
+    font-size: 15px;
+    min-height: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .work {
+    flex-wrap: wrap;
+  }
+
+  .samples-row2{
+    flex-wrap: wrap;
+  }
+
+  .short-sample {
+    margin-bottom: 25px;
+  }
+}
